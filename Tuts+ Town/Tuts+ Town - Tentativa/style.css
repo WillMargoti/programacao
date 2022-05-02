@@ -1,0 +1,31 @@
+/* 
+	h1 em open sans bold
+	titulos em open sans semibold
+	o resto em open sans normal
+*/
+
+
+
+body{
+	font-family: open sans;
+	background-color: #FAF8DA;
+	text-align: center;
+}
+h1{
+	font-size: 72px;
+	color: #205D76;
+}
+h2{
+	font-size: 36px;
+	color: #205D76;
+	display: inline-block;
+}
+li{
+	font-size: 24px;
+}
+p{
+	padding-bottom: 15px;
+	background-color: #FFC122;
+}
+div{
+}
