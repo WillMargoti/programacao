@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Sistema de grids</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+  </head>
+
+  <body>
+    <!-- Grid mais conhecido é o grid de 12 colunas -->
+
+    <div class="container bg-success">
+         Conteúdo do site
+    </div>
+    <br>
+
+    <div class="container bg-success">
+         <div class="row">
+             Conteúdo
+         </div>
+    </div>
+    <br>
+
+    <div class="container bg-success">
+         <div class="row ">
+             <div class="bg-warning">
+                 Área 01
+             </div>
+             <div class="bg-warning">
+                 Área 02
+             </div>
+         </div>
+    </div>
+    <br>
+
+    <div class="container bg-success">
+         <div class="row">
+             <div class="bg-warning col-10"> <!-- Nesse caso, ocupa 10 colunas de um total de 12(fixo) -->
+                 Área 01
+             </div>
+         </div>
+    </div>
+    <br>
+
+    <div class="container bg-success">
+         <div class="row">
+             <div class="bg-warning col-2"> <!-- A soma total das colunas aqui é 12, para que não sobre espaço em branco  --->
+                 Área 01
+             </div>
+             <div class="bg-danger col-10">
+                 Área 02
+             </div>
+         </div>
+    </div>
+    <br>
+
+    <div class="container bg-success">
+         <div class="row">
+             <div class="bg-warning col-6 col-sm-2 col-md-10"> <!-- aqui, quando passar do tamanho small(sm) a coluna passa a ser 2, e ao passar do medium(md) vira 10--> 
+                 Área 01
+             </div>
+             <div class="bg-danger col-6 col-sm-10 col-md-2">
+                 Área 02
+             </div>
+         </div>
+    </div>
+    <br>
+
+    <div class="container bg-success">
+         <div class="row">
+             <div class="bg-warning col-6 col-sm-2 col-md-10 col-lg-6 col-xl-1"> <!-- mesma coisa que o de cima, mas usando todos os breakpoints--> 
+                 Área 01
+             </div>
+             <div class="bg-danger col-6 col-sm-10 col-md-2 col-lg-6 col-xl-11">
+                 Área 02
+             </div>
+         </div>
+    </div>
+    <br>
+
+     <div class="container bg-success">
+         <div class="row">
+             <div class="bg-warning col-md-10">
+                 Área 01
+             </div>
+             <div class="bg-danger col-md-2">
+                 Área 02
+             </div>
+         </div>
+    </div>
+    <br>
+
+    <div class="container bg-success">
+         <div class="row">
+             <div class="bg-light border p-3 col-md-6">
+                <h2>Lorem ipsum dolorem sit amet</h2> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <button class="btn btn-warning">Leia mais</button>
+             </div>
+             <div class="bg-light border p-3 col-md-6">
+                 <h2>Lorem ipsum dolorem sit amet</h2> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <button class="btn btn-warning">Leia mais</button>
+             </div>
+         </div>
+    </div>
+    <br>
+
+    <div class="container bg-success">
+         <div class="row">
+             <div class="bg-light border p-3 col-md-6 col-lg-4">
+                <h2>Lorem ipsum dolorem sit amet</h2> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <button class="btn btn-primary">Leia mais</button>
+             </div>
+             <div class="bg-light border p-3 col-md-6 col-lg-4">
+                 <h2>Lorem ipsum dolorem sit amet</h2> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <button class="btn btn-primary">Leia mais</button>
+             </div>
+             <div class="bg-light border p-3 col-md-6 col-lg-4">
+                 <h2>Lorem ipsum dolorem sit amet</h2> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <button class="btn btn-primary">Leia mais</button>
+             </div>
+         </div>
+    </div>
+    <br>
+    <!-- Configuração do grid  -->
+
+    <div class="container bg-light">
+        <h2>Largura fixa</h2> <!-- Nesse caso (colocando a classe 'col'), ele conta a qtde de elementos na div e automaticamente define a quantidade de colunas (para que fique simétrico)-->
+        <div class="row">
+            <div class="bg-primary border col">Área 01</div>
+            <div class="bg-primary border col">Área 02</div>
+            <div class="bg-primary border col">Área 03</div>
+            <div class="bg-primary border col">Área 04</div>
+        </div>
+
+        <h2>Largura automática (auto-layout)</h2> <!-- Nesse caso (colocando a classe 'col'), ele conta a qtde de espaço sobrando e automaticamente define a quantidade de colunas (para que ocupe 12 colunas no total)-->
+        <div class="row">
+            <div class="bg-primary border col-6">Área 01</div>
+            <div class="bg-primary border col-2">Área 02</div>
+            <div class="bg-primary border col">Área 03</div> <!--Diferente das 2 acima, nesse caso não foi definido(manualmente) quantas colunas terá, isso foi feito automaticamente pela classe 'col'  -->
+        </div>
+
+        <h2>Largura igual empilhada</h2> <!-- nesse caso, ele só passa a ficar um do lado do outro a partir do momento definido pela classe (col-sm = a partir do small)-->
+        <div class="row">
+            <div class="bg-primary border col-sm">Área 01</div>
+            <div class="bg-primary border col-sm">Área 02</div>
+            <div class="bg-primary border col-sm">Área 03</div>
+        </div>
+
+        <h2>Ordenando</h2> <!-- aqui, usando a classe 'order', a ordem que o conteúdo é mostrado pode ser alterado-->
+        <div class="row">
+            <div class="bg-primary border col-sm order-3">Área 01</div>
+            <div class="bg-primary border col-sm order-1">Área 02</div>
+            <div class="bg-primary border col-sm order-2">Área 03</div>
+        </div>
+
+        <h2>Offset</h2> <!-- alinhar/ movimenta as colunas quando não há itens em todas as 12 colunas-->
+        <div class="row">
+            <div class="bg-primary border col-md-4 offset-md-4">Login..</div> <!--Aqui, a classe offset deslocou 3 colunas, e como 6+3+3=12, o elemento ficou no meio. Em geral, o offset diz quantas colunas o elemento irá se deslocar para a direita -->
+        </div>
+
+        <h2>Offset multiplos alinhamentos</h2> <!-- o offset também pode ser utilizados em múltiplos elementos-->
+        <div class="row">
+            <div class="bg-primary border col-md-3 ">Área 01</div>
+            <div class="bg-primary border col-md-3 offset-md-6">Área 02</div>
+        </div>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
